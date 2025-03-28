@@ -1,0 +1,29 @@
+form {
+  &.ui.segment.form {
+    background-color: #F1F9FF;
+    margin-top: 2rem;
+  }
+  
+  &.form {
+    &:after {
+      content: '';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+}
+
+.votes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E6E6E6;
+  padding: 1em 0;
+  border-radius: 5px;
+}
+
+.meta {
+  color: #9A9A9A
+}
