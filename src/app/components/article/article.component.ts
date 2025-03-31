@@ -44,11 +44,9 @@ export class ArticleComponent {
 
   handleUpVoteClick() {
     this.articleService.upvoteArticle(this.article()!)
-    this.articleService.setSortingOrder('votes');
   }
 
   handleDownVoteClick() {
     this.articleService.downvoteArticle(this.article()!)
-    this.articleService.setSortingOrder('votes');
   }
 }

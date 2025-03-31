@@ -52,11 +52,9 @@ export class ArticleListComponent {
     // Sort the filtered articles based on the order (votes/asc/desc)
     return filteredArticles.sort((a, b) => {
       if (orderSig === 'asc')
-        return a.title.localeCompare(b.title); // Ascending order
-      else if (orderSig === 'desc')
-        return b.title.localeCompare(a.title); // Descending order
+        return a.votes - b.votes; // Ascending order
       else
-        return b.votes - a.votes; // votes order
+        return b.votes - a.votes; // Descending order
     });
 
   });
